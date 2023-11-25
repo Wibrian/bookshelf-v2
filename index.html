@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Bookshelf</title>
+    <title>Bookshelf</title>
   </head>
   <body>
     <header>
@@ -23,15 +23,30 @@
             <input id="inputAuthor" type="text" required />
           </div>
           <div class="input">
-            <label for="inputAuthor"></label>
+            <label for="inputAuthor">Release Year</label>
             <input id="inputAuthor" type="number" required />
           </div>
-          <div class="input"></div>
+          <div class="input">
+            <label for="inputImage">Image</label>
+            <input id="inputImage" type="file" accept="image/jpg, image/jpeg, image/png" />
+          </div>
           <div class="checkbox"></div>
         </form>
       </section>
       <section class="search__book"></section>
-      <section class="book"></section>
+      <section class="book">
+        <img src="" alt="" />
+        <div>
+          <p>Book Title</p>
+          <p>Name Author</p>
+          <p>Release Year</p>
+          <div>
+            <button>Edit</button>
+            <button>Delete</button>
+            <button>Has Been Read</button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
