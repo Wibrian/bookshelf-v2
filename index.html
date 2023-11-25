@@ -3,12 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Inter&family=Kanit&family=Libre+Baskerville&family=Noto+Sans&family=Raleway&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
     <title>Bookshelf</title>
   </head>
   <body>
     <header>
       <nav>
-        <h1>My Bookshelf</h1>
+        <h1>Bookshelf</h1>
       </nav>
     </header>
     <main>
@@ -16,15 +23,15 @@
         <form action="" id="inputBook">
           <div class="input">
             <label for="inputTitle">Book Title</label>
-            <input id="inputTitle" type="text" required />
+            <input id="inputTitle" placeholder="Naruto: Shippuden" type="text" required />
           </div>
           <div class="input">
             <label for="inputAuthor">Author</label>
-            <input id="inputAuthor" type="text" required />
+            <input id="inputAuthor" placeholder="Masashi Kishimoto" type="text" required />
           </div>
           <div class="input">
             <label for="inputAuthor">Release Year</label>
-            <input id="inputAuthor" type="number" required />
+            <input id="inputAuthor" placeholder="2006" type="number" required />
           </div>
           <div class="input">
             <label for="inputImage">Image</label>
@@ -33,21 +40,87 @@
           <div class="checkbox"></div>
         </form>
       </section>
-      <section class="search__book"></section>
       <section class="book">
-        <img src="" alt="" />
-        <div>
-          <p>Book Title</p>
-          <p>Name Author</p>
-          <p>Release Year</p>
-          <div>
-            <button>Edit</button>
-            <button>Delete</button>
-            <button>Has Been Read</button>
+        <div class="list">
+          <img src="image/cover.jpg" alt="" />
+          <div class="book__content">
+            <div class="book__desc">
+              <h2>Book Title asdasdasddasdasdasdasadasdas</h2>
+              <p>Name Author</p>
+              <p>Release Year</p>
+            </div>
+            <div class="list__button">
+              <button>Edit</button>
+              <button>Delete</button>
+              <button>Has Been Read</button>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <img src="image/cover.jpg" alt="" />
+          <div class="book__content">
+            <div class="book__desc">
+              <h2>Book Title asdasdasddasdasdasdasadasdas</h2>
+              <p>Name Author</p>
+              <p>Release Year</p>
+            </div>
+            <div class="list__button">
+              <button>Edit</button>
+              <button>Delete</button>
+              <button>Has Been Read</button>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <img src="image/cover.jpg" alt="" />
+          <div class="book__content">
+            <div class="book__desc">
+              <h2>Book Title asdasdasddasdasdasdasadasdas</h2>
+              <p>Name Author</p>
+              <p>Release Year</p>
+            </div>
+            <div class="list__button">
+              <button>Edit</button>
+              <button>Delete</button>
+              <button>Has Been Read</button>
+            </div>
+          </div>
+        </div>
+        <div class="list">
+          <img src="image/cover.jpg" alt="" />
+          <div class="book__content">
+            <div class="book__desc">
+              <h2>Book Title asdasdasddasdasdasdasadasdas</h2>
+              <p>Name Author</p>
+              <p>Release Year</p>
+            </div>
+            <div class="list__button">
+              <button>Edit</button>
+              <button>Delete</button>
+              <button>Has Been Read</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="book__read">
+        <div class="list">
+          <img src="image/cover.jpg" alt="" />
+          <div class="book__content">
+            <div class="book__desc">
+              <h2>Book Title asdasdasddasdasdasdasadasdas</h2>
+              <p>Name Author</p>
+              <p>Release Year</p>
+            </div>
+            <div class="list__button">
+              <button>Edit</button>
+              <button>Delete</button>
+              <button>Has Been Read</button>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer></footer>
   </body>
+  <script src="index.js"></script>
 </html>
