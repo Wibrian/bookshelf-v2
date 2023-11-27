@@ -6,7 +6,7 @@
 }
 
 * {
-  font-family: "Inter", sans-serif;
+  font-family: "Nanum Myeongjo", serif;
 }
 
 body {
@@ -18,24 +18,33 @@ body {
 
 header {
   padding: 1rem;
-  background-color: var(--blue-1);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
+  border: 1px solid black;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  align-items: flex-end;
+}
+
+nav p {
+  margin: 0;
 }
 
 header h1 {
   margin: 0;
   font-size: 30px;
-  color: white;
 }
 
 main {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding-top: 66px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding-top: 69px;
 }
 
 /* input book */
@@ -54,7 +63,8 @@ main {
   gap: 10px;
   padding: 0.5rem;
   width: 100%;
-  background-color: green;
+  background-color: white;
+  border: 1px solid black;
 }
 
 .input {
@@ -75,14 +85,15 @@ input {
   flex-direction: column;
   flex-grow: 1;
   background-color: #a6f6ff;
-  overflow: scroll;
-  height: 600px;
+  overflow-y: scroll;
+  height: 80.5vh;
 }
 
 .list {
   display: flex;
   flex-direction: row;
-  background-color: whitesmoke;
+  background-color: white;
+  border: 1px solid black;
   margin: 0.5rem;
   padding: 1rem;
   gap: 10px;
