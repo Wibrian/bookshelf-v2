@@ -14,10 +14,19 @@ body {
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
 /* header */
 
 header {
   padding: 1rem;
+  margin: 0.5rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -27,7 +36,7 @@ header {
   background-color: white;
 }
 
-nav {
+nav .title {
   display: flex;
   align-items: flex-end;
 }
@@ -42,9 +51,10 @@ header h1 {
 }
 
 main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding-top: 69px;
+  display: flex;
+  flex-flow: row;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 75px;
 }
 
 /* input book */
@@ -55,9 +65,14 @@ main {
   justify-content: center;
   padding: 0.5rem;
   position: relative;
+  width: 50%;
 }
 
 .input__book form {
+  position: sticky;
+  top: 83px;
+  left: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -82,11 +97,12 @@ input {
 
 .book {
   display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  background-color: #a6f6ff;
-  overflow-y: scroll;
-  height: 80.5vh;
+  flex-flow: column;
+  width: 50%;
+}
+
+.book__content {
+  width: 100%;
 }
 
 .list {
@@ -95,13 +111,44 @@ input {
   background-color: white;
   border: 1px solid black;
   margin: 0.5rem;
-  padding: 1rem;
+  padding: 0.5rem;
   gap: 10px;
-  width: cover;
+  height: 200px;
 }
 
 .list img {
-  height: 150px;
+  height: 100%;
+}
+
+.list__button {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.list__button button {
+  padding: 0.5rem;
+  flex-grow: 1;
+  background-color: white;
+  border: 1px solid black;
+  font-weight: bold;
+  transition: 0.3s;
+  margin: 5px 5px 0 5px;
+}
+
+.list__button button:nth-child(1):hover {
+  background-color: yellow;
+}
+
+.list__button button:nth-child(2):hover {
+  background-color: red;
+  color: white;
+}
+
+.list__button button:nth-child(3):hover {
+  background-color: green;
+  color: white;
 }
 
 .book__content {
@@ -112,6 +159,10 @@ input {
 
 .book__desc {
   word-break: break-all;
+}
+
+.book__desc h2 {
+  padding-bottom: 1rem;
 }
 
 .book__desc p,
